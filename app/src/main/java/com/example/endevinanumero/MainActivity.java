@@ -36,13 +36,14 @@ public class MainActivity extends AppCompatActivity {
                 }
                 else if(number==random){
                     text = "Muy bien, aquest es el numero.\nIntentos: "+contador;
-                    contador=0;
+                    random = (int) (Math.random()*10-1);
                 }
                 int duration = Toast.LENGTH_SHORT;
                 Toast toast = Toast.makeText(context, text, duration);
                 toast.show();
-
-                toast.show();
+                if(number==random){
+                    contador=0;
+                }
 
             }
         });
