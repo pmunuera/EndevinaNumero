@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">EndevinaNumero</string>
+    <string name="ok">ok</string>
+    <string name="dialog_win_game">dialog_win_game</string>
 </resources>

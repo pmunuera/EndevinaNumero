@@ -26,7 +26,8 @@
         android:layout_height="86dp"
         android:ems="10"
         android:inputType="number"
-        android:text="Introdueix un numero"
+        android:selectAllOnFocus="true"
+        android:text="0"
         android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -40,12 +41,12 @@
         android:id="@+id/textView"
         android:layout_width="102dp"
         android:layout_height="38dp"
-        android:layout_marginStart="152dp"
-        android:text="Intents: "
+        android:layout_marginStart="292dp"
+        android:text="Intents: 0"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.619" />
+        app:layout_constraintVertical_bias="0.023" />
 
     <TextView
         android:id="@+id/textView2"
