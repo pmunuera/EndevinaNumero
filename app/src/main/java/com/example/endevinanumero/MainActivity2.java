@@ -39,7 +39,7 @@ public class MainActivity2 extends AppCompatActivity {
         button2.setOnClickListener(new View.OnClickListener() {
         public void onClick(View v) {
             Intent intent2 = new Intent(MainActivity2.this, MainActivity.class);
-            startActivity(intent2);
+
             }
         });
     }
