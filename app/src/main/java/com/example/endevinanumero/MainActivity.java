@@ -31,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         final Button button = findViewById(R.id.button);
+        final Button button3 = findViewById(R.id.button3);
         final String[] scrollText = {""};
 
 
@@ -80,9 +81,7 @@ public class MainActivity extends AppCompatActivity {
                                                     return new Integer(u.getIntents()).compareTo(new Integer(u1.getIntents()));
                                                 }
                                             });
-                                            Intent intent = new Intent(MainActivity.this, MainActivity2.class);
-                                            //intent.putExtra("usuarisRecord",usuarisRecord);
-                                            startActivity(intent);
+
                                             random = (int) (Math.random()*100-1);
                                             contador=0;
                                             viewIntents.setText("Intents: 0");
@@ -108,6 +107,13 @@ public class MainActivity extends AppCompatActivity {
                 textScrollView.setText(scrollText[0]);
                 viewIntents.setText("Intents: "+contador);
                 variable.setText("");
+            }
+        });
+        button.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, MainActivity2.class);
+                //intent.putExtra("usuarisRecord",usuarisRecord);
+                startActivity(intent);
             }
         });
 
