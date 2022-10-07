@@ -109,7 +109,7 @@ public class MainActivity extends AppCompatActivity {
                 variable.setText("");
             }
         });
-        button.setOnClickListener(new View.OnClickListener() {
+        button3.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, MainActivity2.class);
                 //intent.putExtra("usuarisRecord",usuarisRecord);
