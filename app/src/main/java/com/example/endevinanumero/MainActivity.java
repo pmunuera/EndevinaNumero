@@ -45,20 +45,15 @@ public class MainActivity extends AppCompatActivity {
                 textScrollView.setMovementMethod(new ScrollingMovementMethod());
                 Context context = getApplicationContext();
                 CharSequence text="";
-                int duration = Toast.LENGTH_SHORT;
                 if (number<random){
-                   text = "El numero es mes gran que aquest";
                     contador++;
-                    scrollText[0] = scrollText[0] +"\nNumero: "+number;
-                    Toast toast = Toast.makeText(context, text, duration);
-                    toast.show();
+                    scrollText[0] = scrollText[0] +"\nEl numero es mes gran que: "+number;
+
                 }
                 else if(number>random){
-                    text = "El numero es mes petit que aquest";
                     contador++;
-                    scrollText[0] = scrollText[0] +"\nNumero: "+number;
-                    Toast toast = Toast.makeText(context, text, duration);
-                    toast.show();
+                    scrollText[0] = scrollText[0] +"\nEl numero es mes petit que: "+number;
+
                 }
                 else if(number==random){
                     text = "Molt be, aquest es el numero.\nIntentos: "+contador;
